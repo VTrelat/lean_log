@@ -155,7 +155,7 @@ end Excercice2
 section Excercice3
 
 inductive DyckWord
-  | ε
+  | ε : DyckWord
   | wrap (w : DyckWord) : DyckWord
   | concat (w₁ w₂ : DyckWord) : DyckWord
 
